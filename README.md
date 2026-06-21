@@ -1,144 +1,171 @@
 # VRChat-Agent-Open-Memory-Library
 
-> 🧠 **VRChat 专属 AI Agent 开放记忆库** — 结构化、可验证、多领域的 VRChat 创作者知识体系
+> 🧠 **VRChat 专属 AI Agent 开放记忆库 v2.0.0** — Agent 身份驱动 · 结构化 · 可验证 · 多领域的 VRChat 创作者知识体系
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
-[![Files: ~291](https://img.shields.io/badge/Files-~291-blue.svg)]()
+[![Version: v2.0.0](https://img.shields.io/badge/Version-v2.0.0-blue.svg)](CHANGELOG.md)
+[![Files: ~313](https://img.shields.io/badge/Files-~313-blue.svg)]()
 [![Language: 中文](https://img.shields.io/badge/Language-中文-red.svg)]()
+[![Architecture: SOUL+Memory](https://img.shields.io/badge/Architecture-SOUL+Memory-purple.svg)]()
 
 ---
 
 ## 📖 简介
 
-**VRChat-Agent-Open-Memory-Library** 是一个为 VRChat 创作者 AI Agent 设计的结构化知识库。它将 VRChat 官方文档、社区智慧、开源项目源码、以及资深创作者的实践经验，整合为一个**可被 AI Agent 直接检索与推理**的记忆系统。
+**VRChat-Agent-Open-Memory-Library v2.0.0** 是一次架构性升级。在 v1.0.0 纯知识库基础上，新增 **SOUL（Agent 身份系统）**，形成 **SOUL + Memory 双层架构**：
 
-本库不仅是"文档的堆砌"——每一份知识都经过**可信度分级**（Tier A~E）、**事实/推断标注**（FACT/INFERENCE）、以及**领域专家交叉验证**，确保 Agent 在生成代码或给出建议时，能区分"确定的事实"和"合理的推断"。
+- **SOUL.md** — 定义 Agent 是谁、如何思考、如何工作（身份 · 人格 · 领域路由 · 6 工作模式 · 证据系统）
+- **memory/** — 结构化知识库本体（313 个 Markdown 文件，覆盖 6 大领域）
 
----
-
-## 🎯 适用场景
-
-| 场景 | 说明 |
-|------|------|
-| 🤖 **AI Agent 记忆后端** | 作为 VRChat 创作专用 Agent 的知识底座，为代码生成、问题诊断、设计建议提供依据 |
-| 🔍 **创作者快速查阅** | 按领域索引快速定位 API 签名、设计模式、性能约束、常见陷阱 |
-| 📝 **代码审查参考** | 15 项 UdonSharp 审查清单 + 32+ 失败案例 + 严重性分级模型 |
-| 🏗️ **World 开发全流程** | 从 Udon 编程、网络同步、性能优化到光照烘焙、场景组件的完整知识链 |
-| 👤 **Avatar 改模与优化** | Modular Avatar、VRCFury、AAO、lilToon 等核心工具的深度技术文档 |
-| 🌐 **外部应用开发** | VRChat HTTP API / WebSocket / TypeScript SDK 完整参考（18 篇） |
-| 📱 **跨平台适配** | Quest/Android 限制、移动 UI 优化、PC/Quest 自动切换策略 |
-| 🔗 **Hybrid 系统集成** | OSC 协议数据库、AudioLink 音频可视化、Avatar↔World 交互模式 |
+本库不仅是"文档的堆砌"——每一份知识都经过 **可信度分级**（Tier A~E）、**事实/推断标注**（FACT/INFERENCE）、YAML 标准化元数据，确保 Agent 在生成代码或给出建议时，能区分"确定的事实"和"合理的推断"。
 
 ---
 
-## 🗂️ 知识库结构
+## 🏗️ v2.0.0 核心架构：SOUL + Memory 双层设计
 
 ```
-memory/
-├── _always-load.md           # 🔴 Agent 启动必读：领域识别协议 + 30s 核心约束
-├── FACT.md                   # 📋 长期事实库：架构决策 + 修正记录 + 绝对规则
-├── index.md                  # 🧭 多领域路由地图：按需求快速定位到正确文件
-├── JOURNAL.jsonl             # 📓 操作日志（结构化 JSONL）
+VRChat-Agent-Open-Memory-Library/
 │
-├── world/          (~130 篇) # 🌍 World 领域 — 主力建设方向
-│   ├── udon/                 #   Udon 编程（可视化 + C#）+ VM + 事件 + 调试
-│   ├── scene-components/     #   9 个核心场景组件（镜像/传送门/桌台/站点…）
-│   ├── examples/             #   SDK 内置示例拆解（13+ Prefab + Obstacle Course）
-│   ├── bakery/               #   Bakery 光照烘焙指南
-│   ├── shader/               #   GraphLit 节点编辑器
-│   ├── clientsim/            #   ClientSim 编辑器模拟工具
-│   └── *.md                  #   性能优化/光照/遮挡剔除/反射探针/图形 API…
+├── SOUL.md                   # 🧬 Agent 身份系统（v5.0-slim）
+│   ├── Identity              #   Agent 角色定义与核心原则
+│   ├── Personality           #   工程人格：客观克制 · 精确不迎合 · 教学适应性
+│   ├── Domain Router         #   6 领域自动路由（Avatar/World/Hybrid/External/Research/Meta）
+│   ├── Working Modes ×6      #   Architect / Engineer / Reviewer / Teacher / Researcher / Curator
+│   ├── Evidence System       #   FACT / INFERENCE / UNKNOWN / CONFLICT 四级证据体系
+│   ├── Failure Policy        #   知识不足时的安全降级策略
+│   └── Retrieval Protocol    #   6 步知识检索协议
 │
-├── avatar/         (~51 篇)  # 👤 Avatar 领域 — 改模与优化
-│   ├── shader/               #   5 大着色器深度文档（lilToon 17篇/ORL/SCSS…）
-│   ├── modular-avatar.md     #   Modular Avatar 完整参考（25+ 组件）
-│   ├── vrcfury-reference.md  #   VRCFury 全组件清单 + 优化场景对比矩阵
-│   └── *.md                  #   Animator/PhysBone/Constraint/优化/教学法…
+├── memory/                   # 📚 结构化知识库本体（313 文件）
+│   ├── _always-load.md       #   🔴 启动必读：领域识别 + 30s 核心约束 + 回答前自检
+│   ├── FACT.md               #   📋 长期事实库：KB 架构 + 核心约束 + 修正记录
+│   ├── index.md              #   🧭 多领域路由地图：按需求快速定位
+│   ├── JOURNAL.jsonl         #   📓 结构化操作日志
+│   │
+│   ├── world/      (149 篇)  #   🌍 World 领域 — 主力建设
+│   ├── avatar/     (51 篇)   #   👤 Avatar 领域 — 改模与优化
+│   ├── api/        (18 篇)   #   📚 API 参考 — UdonSharp 编程速查
+│   ├── rules/      (8 篇)    #   ⚖️ 规则系统 — 硬约束与强制要求
+│   ├── patterns/   (22 篇)   #   🎯 设计模式 — 可复用实现方案
+│   ├── hybrid/     (4 篇)    #   🔗 Hybrid 领域 — OSC / AudioLink
+│   ├── platform/   (5 篇)    #   📱 Platform 领域 — Quest / 跨平台
+│   ├── vrchatsdk/  (19 篇)   #   🌐 VRChatSDK — HTTP API 完整参考
+│   ├── sources/    (14 篇)   #   🔖 来源追踪 — 信息源分级
+│   ├── reviews/    (4 篇)    #   ✅ 审查系统 — 15 项清单 + 32+ 失败案例
+│   ├── references/ (2 篇)    #   📎 参考资料 — 元数据与对比
+│   ├── misc/       (4 篇)    #   📌 杂项 — 后处理 / 无障碍
+│   ├── journal/    (5 篇)    #   📝 会话记忆 — 临时记录
+│   │
+│   ├── meta/       (3 篇)    #   🛠️ v2.0.0 新增：知识库治理体系
+│   │   ├── kb-protocol.md    #   知识写入流程 + 维护协议 + 审计标准
+│   │   ├── working-modes.md  #   6 工作模式完整定义（从 SOUL.md 瘦身迁移）
+│   │   └── auxiliary-scripts.md # 5 个维护脚本清单
+│   │
+│   └── _curator_tools/       #   🔮 策展工具预留目录
 │
-├── api/            (~17 篇)  # 📚 API 参考 — UdonSharp 编程速查
-│   ├── networking.md         #   网络同步 API（SetOwner/Serialization/NetworkEvent）
-│   ├── udon-type-exposure.md #   1387 类型 / 9579 暴露 API 完整树索引
-│   ├── not-exposed.md        #   未暴露 API 黑名单（List/Dict/LINQ/反射…）
-│   └── *.md                  #   玩家/动画/音频/UI/持久化/拾取/事件…
-│
-├── rules/          (~8 篇)   # ⚖️ 规则系统 — 硬约束与强制要求
-│   ├── networking-rules.md   #   网络同步 22 条规则
-│   ├── udonsharp-language-limits.md # C# 语言限制 14 条
-│   ├── performance-rules.md  #   性能优化 12 条规则
-│   ├── multi-vm-rules.md     #   多 VM 协作 9 条规则
-│   └── *.md                  #   VM 架构/深度陷阱/API 暴露判断…
-│
-├── patterns/       (~22 篇)  # 🎯 设计模式 — 可复用实现方案
-│   ├── manual-sync-state.md          # 手动同步离散状态
-│   ├── bit-packed-flags.md           # 位域压缩标志
-│   ├── owner-authoritative-interaction.md # 所有者权威交互
-│   ├── late-joiner-state-restore.md  # 延迟加入者状态恢复
-│   ├── event-driven-state-machine.md # 事件驱动状态机
-│   └── *.md                  #   Sardinal/LuraSwitch2/ULocalization 独有 Pattern…
-│
-├── hybrid/         (~4 篇)   # 🔗 Hybrid 领域 — 跨系统集成
-│   ├── osc-protocol.md       #   OSC 完整协议数据库
-│   ├── audio-link.md         #   AudioLink 音频可视化
-│   └── udon-world-plugins.md #   推荐 Udon 世界插件索引
-│
-├── platform/       (~5 篇)   # 📱 Platform 领域 — 跨平台开发
-│   ├── android-development.md    # Quest/Android 约束
-│   ├── cross-platform-content.md # 跨平台资源策略
-│   ├── mobile-ui-optimization.md # 移动端 UI 优化
-│   └── easyquestswitch.md        # EasyQuestSwitch PC/Quest 切换
-│
-├── vrchatsdk/      (~19 篇)  # 🌐 VRChatSDK — HTTP API 完整参考
-│   ├── 01_首页.md ~ 18_API_群组.md  # 用户/世界/Avatar/好友/实例/文件/群组 API
-│   ├── 03_Websocket_API.md          # WebSocket 实时事件
-│   └── 16~17_模型_*.md              # 数据模型定义
-│
-├── sources/        (~14 篇)  # 🔖 来源追踪 — 信息源分级
-│   ├── sardinal.md           #   HoshinoLabs Sardinal 通用消息总线
-│   ├── ulocalization.md      #   HoshinoLabs ULocalization 多语言
-│   ├── vpm-package-template.md # VPM 包开发模板
-│   └── *.md                  #   ClientSim/UdonVoiceUtils/LuraSwitch2…
-│
-├── reviews/        (~4 篇)   # ✅ 审查系统 — 质量标准
-│   ├── review-checklist.md   #   15 项 UdonSharp 审查清单
-│   ├── common-failures.md    #   32+ 已知失败模式
-│   └── severity-model.md     #   严重性分级模型
-│
-├── references/     (~2 篇)   # 📎 参考资料 — 元数据与对比
-├── misc/           (~4 篇)   # 📌 杂项 — 后处理/无障碍设计
-└── journal/        (~8 篇)   # 📝 会话记忆 — 临时记录（定期清理）
+├── memory v1.0.0/            # 📦 v1.0.0 归档（295 文件，供 diff 对比）
+├── CHANGELOG.md              # 📝 版本更新日志
+├── LICENSE                   # 📜 MIT License
+└── README.md                 # 📖 本文件
 ```
+
+---
+
+## 📋 核心文件角色速查
+
+| 文件 | 角色 | 谁读取 | 何时读取 |
+|------|------|--------|---------|
+| **`SOUL.md`** | Agent 身份与行为准则 | Agent 系统 | 会话初始化时加载为 System Prompt |
+| **`memory/_always-load.md`** | 跨域核心约束 + 自检清单 | Agent | **每次回答前必读**（30s 速查） |
+| **`memory/FACT.md`** | KB 架构、长期事实、修正记录 | Agent + 维护者 | 会话初始化 + 知识库维护 |
+| **`memory/index.md`** | 多领域路由地图 + 完整文件清单 | Agent | 领域识别后，定位具体知识文件 |
+| **`memory/JOURNAL.jsonl`** | 结构化操作日志 | Curator 模式 | 知识写入 / 审计回溯 |
+| **`memory/meta/kb-protocol.md`** | 知识写入流程与维护协议 | Curator 模式 | 知识库维护操作 |
+| **`memory/meta/working-modes.md`** | 6 工作模式完整定义 | 全部模式 | 模式触发时加载 |
+| **`memory/meta/auxiliary-scripts.md`** | 维护脚本清单与运行顺序 | Curator 模式 | 定期维护 |
+
+---
+
+## 🔌 不同 Agent 系统加载方式
+
+本库设计为 **平台无关**，可适配多种 AI Agent 系统。以下是各平台的推荐加载方案：
+
+### 1. GitHub Copilot (VS Code) ← 推荐
+
+```
+直接在 VS Code 中打开本仓库作为 workspace。
+Copilot 自动将 SOUL.md 和 memory/ 作为上下文加载。
+```
+
+**配置方式**：无需额外配置，workspace 内的 `.md` 文件自动纳入上下文。可通过 `.github/copilot-instructions.md` 显式指定 `SOUL.md` 为 System Prompt。
+
+### 2. Cursor / Claude Code
+
+```yaml
+# .cursorrules 或 CLAUDE.md
+# 将 SOUL.md 作为 Project Instructions
+instructions: SOUL.md
+memory_root: memory/
+```
+
+或在项目根目录放置 `AGENTS.md` / `CLAUDE.md`，内容指向 `SOUL.md`。
+
+### 3. Cherry Studio / 自定义 Agent
+
+```markdown
+# Agent 配置
+System Prompt = 读取 SOUL.md 全文
+Memory Root = memory/
+启动文件 = _always-load.md, FACT.md, index.md
+```
+
+直接将 `SOUL.md` 内容复制到 Agent 的 System Prompt 字段，`memory/` 目录作为知识库附加文件。
+
+### 4. 通用 LLM Chat (ChatGPT / Claude Web / DeepSeek)
+
+```markdown
+# 手动加载流程
+1. 复制 SOUL.md 全文 → 粘贴到对话开头作为 System Prompt
+2. 附加 _always-load.md（核心约束）
+3. 按需附加 index.md（路由地图）或具体域文件
+```
+
+> ⚠️ 通用 Chat 上下文窗口有限，建议按需加载具体域文件，不要一次加载全部 313 个文件。
+
+### 5. OpenAI Custom GPT / Claude Project
+
+```
+将 SOUL.md 设为 Instructions
+将 memory/ 目录上传为 Knowledge files
+在 Instructions 中引用 memory/index.md 作为路由入口
+```
+
+---
+
+## 🗂️ 知识库结构（memory/）
 
 ---
 
 ## 🏷️ 知识分类体系
 
-本库采用**多维度分类**，每份知识同时具备以下标签：
+本库采用 **三维分类**，每份知识同时具备以下标签：
 
 ### 1. 领域分类（Domain）
 
 | 域 | 图标 | 内容范围 | 文件数 |
 |---|------|---------|--------|
-| **World** | 🌍 | Udon 编程、网络同步、场景组件、性能优化、光照烘焙 | ~130 |
-| **Avatar** | 👤 | Animator、PhysBone、Shader、MA/VRCFury/AAO 工具链、优化 | ~51 |
-| **Hybrid** | 🔗 | OSC 协议、AudioLink、Avatar↔World 交互、MIDI | ~4 |
-| **Platform** | 📱 | Quest/Android 开发、跨平台策略、移动 UI | ~5 |
-| **VRChatSDK** | 🌐 | HTTP API、WebSocket、TypeScript SDK、数据模型 | ~19 |
+| **World** | 🌍 | Udon 编程、网络同步、场景组件、性能优化、光照烘焙、VRCTween、Persistence | 149 |
+| **Avatar** | 👤 | Animator、PhysBone、Shader、MA/VRCFury/AAO 工具链、优化 | 51 |
+| **API** | 📚 | 网络/玩家/动画/音频/UI/持久化 API 签名 + 类型暴露树 | 18 |
+| **Rules** | ⚖️ | 硬约束（语言限制/网络/性能/VM 架构/深度陷阱）| 8 |
+| **Patterns** | 🎯 | 可复用设计模式（同步/状态机/位域/Sardinal 独有 Pattern）| 22 |
+| **VRChatSDK** | 🌐 | HTTP API、WebSocket、TypeScript SDK、数据模型 | 19 |
+| **Sources** | 🔖 | 信息源分级（Sardinal/ULocalization/VPM Template/ClientSim）| 14 |
+| **Hybrid** | 🔗 | OSC 协议、AudioLink、Avatar↔World 交互 | 4 |
+| **Platform** | 📱 | Quest/Android 开发、跨平台策略、移动 UI | 5 |
+| **Reviews** | ✅ | 审查清单、失败案例、严重性模型 | 4 |
+| **Meta** | 🛠️ | 知识库治理（写入协议/工作模式/维护脚本）| 3 |
 
-### 2. 内容类型（Content Type）
-
-| 类型 | 目录 | 说明 | 示例 |
-|------|------|------|------|
-| **规则 (Rules)** | `rules/` | 硬约束，违反即编译失败/崩溃/严重性能问题 | `networking-rules.md`（22 条） |
-| **模式 (Patterns)** | `patterns/` | 可复用实现方案，含 Problem/Context/Solution/Tradeoffs | `manual-sync-state.md` |
-| **API 参考 (API Ref)** | `api/` | 接口签名、暴露状态、热路径标记 | `networking.md` |
-| **领域知识 (Domain)** | `world/` `avatar/` `hybrid/` `platform/` | 专题深度文档 | `modular-avatar.md` |
-| **来源追踪 (Sources)** | `sources/` | 信息源分级与交叉验证 | `sardinal.md` |
-| **审查标准 (Reviews)** | `reviews/` | 检查清单、失败模式、严重性模型 | `review-checklist.md` |
-| **参考资料 (References)** | `references/` | 知识库与外部来源的差异对比 | `creator-docs-comparison.md` |
-| **会话记忆 (Journal)** | `journal/` | 临时记录，定期清理（7~60 天） | 会话/审查/问题/草稿 |
-
-### 3. 可信度分级（Credibility Tier）
+### 2. 可信度分级（Credibility Tier）
 
 | Tier | 级别 | 来源 | 处理方式 |
 |------|------|------|---------|
@@ -150,13 +177,73 @@ memory/
 
 > **核心原则**：Agent 回答时必须区分 FACT（确定事实）和 INFERENCE（推断）。证据不足时输出 "Missing Information"，绝不强行回答。
 
+### 3. YAML 元数据标准化（v2.0.0 新增）
+
+每个核心文件头部包含标准化 YAML frontmatter：
+
+```yaml
+---
+title: 文档标题
+category: world | avatar | api | rules | patterns | ...
+knowledge_level: applied | theoretical | reference
+status: active | draft | deprecated
+tags: [tag1, tag2, ...]
+aliases: [别名1, 别名2]
+related: [关联文件路径]
+source: 知识来源
+source_type: official | community | inference
+version: 1.0
+last_review: 2026-06-21
+confidence: High | Medium | Low
+---
+```
+
+> 此元数据层使知识库可被机器解析，支持自动化审计（`validation_script.py`）、链接健康检查（`governance_script.py`）等维护操作。
+
+---
+
+## 🧬 SOUL.md — Agent 身份系统详解
+
+`SOUL.md` 是 v2.0.0 的核心创新。它定义了 Agent 的 **完整行为框架**：
+
+### 6 工作模式（Auto-Select）
+
+| Mode | 职责 | 触发场景 |
+|------|------|---------|
+| **Architect** | 项目架构、系统设计、网络拓扑、技术选型 | 新项目启动、大规模重构 |
+| **Engineer** | UdonSharp 实现、Avatar 构建、功能开发、Bug 修复 | 具体功能实现 |
+| **Reviewer** | 代码审查、性能审计、资源审查、安全评估 | 代码审查、性能分析 |
+| **Teacher** | 改模教学、工具使用引导、问题诊断 | 新手引导、改模问题 |
+| **Researcher** | 案例研究匹配、模式检索、插件评估 | 技术调研、方案对比 |
+| **Curator** | 知识库审计、修复、补全（内部触发） | 知识库维护 |
+
+### 证据系统（Evidence System）
+
+```
+[FACT]      知识库明确存在 → 标注来源文件 + 章节
+[INFERENCE] 基于 FACT 推导 → 必须标注【推断】
+[UNKNOWN]   证据不足 → 必须标注【未确认】+ Missing Information
+[CONFLICT]  多来源矛盾 → 标注冲突双方 + 采用较新版本 + 建议验证
+```
+
+### 6 步知识检索协议
+
+```
+1. Domain Detection → 匹配 Domain Router
+2. 读 memory/{domain}/index.md → 获取子目录和文件清单
+3. 定位候选文档（最多 3 个）
+4. 读取核心文档（每个 ≤ 200 行，优先读 §概述/§约束/§速查）
+5. 知识充分性检查 → 不足则 Grep 扩展搜索（最多 1 轮）
+6. 仍不充分 → 标注 [UNKNOWN] + Missing Information
+```
+
 ---
 
 ## 🔑 核心特性
 
 ### 🧭 多领域路由系统
 
-`index.md` 作为**路由地图**，Agent 在回答前先识别领域（World/Avatar/Hybrid/Platform），再定位到对应目录检索——避免跨域混淆。
+`index.md` 作为**路由地图**，Agent 在回答前先识别领域（World/Avatar/Hybrid/Platform/VRChatSDK），再定位到对应目录检索——避免跨域混淆。
 
 ### ⚡ 30 秒启动协议
 
@@ -164,7 +251,7 @@ memory/
 - 领域识别（Avatar? World? Hybrid?）
 - 知识优先级（L1 官方规范 > L5 工程推理）
 - World 代码生成的 10 项硬约束（禁止 List/Dict/LINQ/async/coroutine…）
-- 回答完整性自检
+- 回答完整性自检（FACT/INFERENCE 区分、风险标记、未知项标记）
 
 ### 🎯 UdonSharp 专项审查系统
 
@@ -184,6 +271,16 @@ memory/
 - ❌ 未暴露 API 黑名单（List/Dictionary/反射/线程/异常…）
 - 🔧 API 检查器代码模式（静态分析用）
 
+### 🛠️ 知识库治理体系（v2.0.0 新增）
+
+`memory/meta/` 目录定义了知识库的自我维护机制：
+
+| 文件 | 内容 |
+|------|------|
+| `kb-protocol.md` | 知识写入流程（新发现→journal→具体文件→索引→核心约束→FACT）、维护协议（审计→分析→修复→验证→记录）、审计得分标准（A:90+ / B:78 / C/D） |
+| `working-modes.md` | 6 种工作模式的完整定义，含触发场景、输出格式、核心知识、审查重点 |
+| `auxiliary-scripts.md` | 5 个 Python 维护脚本（validation/governance/version_audit/url_health/pure_knowledge_audit）的用途与运行顺序 |
+
 ---
 
 ## 🚀 快速开始
@@ -192,47 +289,36 @@ memory/
 
 ```yaml
 # Agent 配置示例
+system_prompt: "SOUL.md"                # Agent 身份与行为准则
 memory_root: "memory/"
 boot_files:
-  - _always-load.md      # 启动协议（必读）
-  - FACT.md              # 长期事实（必读）
-  - index.md             # 路由地图（必读）
+  - memory/_always-load.md              # 启动协议（每次回答前必读）
+  - memory/FACT.md                      # 长期事实（会话初始化）
+  - memory/index.md                     # 路由地图（领域识别后）
 workflow:
-  1. 领域识别 → 读 index.md
-  2. 核心约束 → 读 _always-load.md
-  3. 领域知识 → 按 index.md 路由到具体目录
-  4. 规则检查 → 读 rules/
-  5. 模式选择 → 读 patterns/
-  6. API 速查 → 读 api/
-  7. 代码审查 → 读 reviews/
+  1. 加载 SOUL.md 作为 System Prompt
+  2. 领域识别 → 读 memory/index.md
+  3. 核心约束 → 读 memory/_always-load.md
+  4. 领域知识 → 按 index.md 路由到具体目录
+  5. 规则检查 → 读 memory/rules/
+  6. 模式选择 → 读 memory/patterns/
+  7. API 速查 → 读 memory/api/
+  8. 代码审查 → 读 memory/reviews/
 ```
 
 ### 用于人类创作者
 
 | 我想做什么 | 从哪里开始 |
 |-----------|-----------|
-| 学习 Udon 编程 | `world/udon/index.md` → `world/udon/udonsharp/` |
-| 解决网络同步问题 | `rules/networking-rules.md` → `patterns/manual-sync-state.md` |
-| 优化 World 性能 | `rules/performance-rules.md` → `world/performance-guide.md` |
-| Avatar 改模入门 | `avatar/modular-avatar.md` → `avatar/teaching-methodology.md` |
-| 选择 Avatar Shader | `avatar/shader/index.md`（完整对比矩阵） |
-| 审查 UdonSharp 代码 | `reviews/review-checklist.md` → `reviews/common-failures.md` |
-| 开发外部应用 | `vrchatsdk/01_首页.md` → 按需查阅 API 文档 |
-| Quest 适配 | `platform/android-development.md` → `platform/easyquestswitch.md` |
-| 查阅 API 签名 | `api/` 目录 grep 关键词 |
-
----
-
-## 📊 知识库数据来源
-
-| 来源类别 | 具体来源 | 对应目录 |
-|---------|---------|---------|
-| 🏛️ **VRChat 官方** | Creator Docs、SDK 源码、Udon VM 规范 | `world/udon/` `api/` `rules/` |
-| 🏛️ **VRChat API** | HTTP API 官方文档、WebSocket 规范 | `vrchatsdk/` |
-| 🔧 **核心工具** | Modular Avatar、VRCFury、lilToon、AAO、ClientSim | `avatar/` `world/clientsim/` |
-| 📦 **开源项目** | Sardinal、ULocalization、UdonVoiceUtils、LuraSwitch2 | `sources/` `patterns/` |
-| 👥 **社区智慧** | VRCD 文档库、DeepWiki、Discord 讨论、创作者笔记 | `misc/` `references/` |
-| ✍️ **作者实践** | Kuriko 个人笔记、项目经验、代码审查记录 | `reviews/` `journal/` |
+| 学习 Udon 编程 | `memory/world/udon/index.md` → `memory/world/udon/udonsharp/` |
+| 解决网络同步问题 | `memory/rules/networking-rules.md` → `memory/patterns/manual-sync-state.md` |
+| 优化 World 性能 | `memory/rules/performance-rules.md` → `memory/world/performance-guide.md` |
+| Avatar 改模入门 | `memory/avatar/modular-avatar.md` → `memory/avatar/teaching-methodology.md` |
+| 选择 Avatar Shader | `memory/avatar/shader/index.md`（完整对比矩阵） |
+| 审查 UdonSharp 代码 | `memory/reviews/review-checklist.md` → `memory/reviews/common-failures.md` |
+| 开发外部应用 | `memory/vrchatsdk/01_首页.md` → 按需查阅 API 文档 |
+| Quest 适配 | `memory/platform/android-development.md` → `memory/platform/easyquestswitch.md` |
+| 查阅 API 签名 | `memory/api/` 目录 grep 关键词 |
 
 ---
 
@@ -253,22 +339,47 @@ workflow:
 | 9 | 同步 String/DisplayName 需特殊处理 | 带宽浪费 |
 | 10 | Enum 比较必须 cast 到 int | 装箱导致 GC |
 
-> 完整约束列表见 `_always-load.md` 和 `rules/` 目录。
+> 完整约束列表见 `memory/_always-load.md` 和 `memory/rules/` 目录。
+
+---
+
+## 📊 知识库数据来源
+
+| 来源类别 | 具体来源 | 对应目录 |
+|---------|---------|---------|
+| 🏛️ **VRChat 官方** | Creator Docs、SDK 源码、Udon VM 规范 | `world/udon/` `api/` `rules/` |
+| 🏛️ **VRChat API** | HTTP API 官方文档、WebSocket 规范 | `vrchatsdk/` |
+| 🔧 **核心工具** | Modular Avatar、VRCFury、lilToon、AAO、ClientSim | `avatar/` `world/clientsim/` |
+| 📦 **开源项目** | Sardinal、ULocalization、UdonVoiceUtils、LuraSwitch2、VizVid | `sources/` `patterns/` |
+| 👥 **社区智慧** | VRCD 文档库、DeepWiki、Discord 讨论、创作者笔记 | `misc/` `references/` |
+| ✍️ **作者实践** | Kuriko 个人笔记、项目经验、代码审查记录 | `reviews/` `journal/` |
 
 ---
 
 ## 📈 项目状态
 
-| 指标 | 数值 |
-|------|------|
-| 📁 总文件数 | ~291 篇 Markdown |
-| 📂 一级目录 | 14 个 |
-| 🌍 最大领域 | World（~130 篇，45%） |
-| 👤 第二大领域 | Avatar（~51 篇，18%） |
-| 📅 最后更新 | 2026-06-20 |
-| 🔄 更新频率 | 持续建设中 |
-| 🌐 语言 | 中文为主，保留英文技术术语 |
-| 📜 许可证 | MIT |
+| 指标 | v2.0.0 | v1.0.0 |
+|------|--------|--------|
+| 📁 总文件数 | 313 | 295 |
+| 📂 总大小 | ~2.8 MB | ~2.5 MB |
+| 🌍 最大领域 | World（149 篇，48%） | World（~130 篇） |
+| 🆕 新增目录 | `meta/` `_curator_tools/` | — |
+| 🆕 新增系统 | SOUL.md Agent 身份、YAML 元数据标准化 | — |
+| 📅 更新日期 | 2026-06-21 | 2026-06-20 |
+| 🔄 更新频率 | 持续建设中 | — |
+| 🌐 语言 | 中文为主，保留英文技术术语 | 同 |
+| 📜 许可证 | MIT | MIT |
+
+---
+
+## 📝 版本历史
+
+| 版本 | 日期 | 核心变化 |
+|------|------|---------|
+| **v2.0.0** | 2026-06-21 | SOUL.md Agent 身份系统 + YAML 元数据标准化 + meta/ 治理体系 + VRCTween/Persistence 新增 |
+| **v1.0.0** | 2026-06-20 | 初始版本，295 文件，6 大领域知识库 |
+
+> 详细变更见 [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
@@ -278,9 +389,10 @@ workflow:
 
 1. **知识贡献**：确保新知识附带 Source 标注和 Last Verified 日期
 2. **可信度标注**：按 Tier A~E 分级，区分 FACT 和 INFERENCE
-3. **交叉引用**：在相关文件间建立双向链接
-4. **格式规范**：遵循现有文件的 Markdown 结构和元数据格式
-5. **审查验证**：涉及代码模式的知识需经过至少一次实际项目验证
+3. **YAML 元数据**：遵循 `meta/kb-protocol.md` 中的 frontmatter 规范
+4. **交叉引用**：在相关文件间建立双向链接
+5. **格式规范**：遵循现有文件的 Markdown 结构和元数据格式
+6. **审查验证**：涉及代码模式的知识需经过至少一次实际项目验证
 
 ---
 
@@ -292,4 +404,4 @@ workflow:
 
 ---
 
-> 🧠 *"让 AI Agent 真正理解 VRChat 创作——不仅仅是代码补全，而是基于结构化知识的专业判断。"*
+> 🧬 *"SOUL defines who the Agent is. Memory defines what the Agent knows. Together, they create a VRChat Technical Architect that doesn't just complete code — it makes professional, verifiable engineering judgments."*

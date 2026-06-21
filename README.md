@@ -17,33 +17,35 @@
 - **SOUL.md** — 定义 Agent 是谁、如何思考、如何工作（身份 · 人格 · 领域路由 · 6 工作模式 · 证据系统）
 - **memory/** — 结构化知识库本体（313 个 Markdown 文件，覆盖 6 大领域）
 
-本库不仅是"文档的堆砌"——每一份知识都经过 **可信度分级**（Tier A~E）、**事实/推断标注**（FACT/INFERENCE）、YAML 标准化元数据，确保 Agent 在生成代码或给出建议时，能区分"确定的事实"和"合理的推断"。
+在V1.0版本中SOUL没有承担导航功能所以并未纳入到体系中，V2.0版本为了进一步减少优化系统提示词占用，将SOUL纳入了设计流程中。
+
+在实际使用时可以考虑将Soul文件加上自己的Agent身份做整合，在保留原有文件导航框架的基础上做升级
 
 ---
 
-## 🏗️ v2.0.0 核心架构：SOUL + Memory 双层设计
+## 🏗️ v2.0.0 核心架构：Memory 
 
 ```
 VRChat-Agent-Open-Memory-Library/
 │
-├── SOUL.md                   # 🧬 Agent 身份系统（v5.0-slim）
+├── SOUL.md                   # 🧬 Agent 身份系统
 │   ├── Identity              #   Agent 角色定义与核心原则
 │   ├── Personality           #   工程人格：客观克制 · 精确不迎合 · 教学适应性
 │   ├── Domain Router         #   6 领域自动路由（Avatar/World/Hybrid/External/Research/Meta）
 │   ├── Working Modes ×6      #   Architect / Engineer / Reviewer / Teacher / Researcher / Curator
-│   ├── Evidence System       #   FACT / INFERENCE / UNKNOWN / CONFLICT 四级证据体系
+│   ├── Evidence System       #   证据体系
 │   ├── Failure Policy        #   知识不足时的安全降级策略
 │   └── Retrieval Protocol    #   6 步知识检索协议
 │
-├── memory/                   # 📚 结构化知识库本体（313 文件）
-│   ├── _always-load.md       #   🔴 启动必读：领域识别 + 30s 核心约束 + 回答前自检
-│   ├── FACT.md               #   📋 长期事实库：KB 架构 + 核心约束 + 修正记录
-│   ├── index.md              #   🧭 多领域路由地图：按需求快速定位
-│   ├── JOURNAL.jsonl         #   📓 结构化操作日志
+├── memory/                   # 📚 结构化知识库本体
+│   ├── _always-load.md       #   🔴 运行资料：领域识别 + 30s 核心约束 + 回答前自检
+│   ├── FACT.md               #   📋 基础引导：KB 架构 + 核心约束 + 修正记录
+│   ├── index.md              #   🧭 文件索引：按需求快速定位
+│   ├── JOURNAL.jsonl         #   📓 操作日志 
 │   │
-│   ├── world/      (149 篇)  #   🌍 World 领域 — 主力建设
+│   ├── world/      (149 篇)  #   🌍 World 领域 — 包含Udon-光影烘焙等世界常用技术
 │   ├── avatar/     (51 篇)   #   👤 Avatar 领域 — 改模与优化
-│   ├── api/        (18 篇)   #   📚 API 参考 — UdonSharp 编程速查
+│   ├── api/        (18 篇)   #   📚 API 参考 — UdonSharp API 转帖
 │   ├── rules/      (8 篇)    #   ⚖️ 规则系统 — 硬约束与强制要求
 │   ├── patterns/   (22 篇)   #   🎯 设计模式 — 可复用实现方案
 │   ├── hybrid/     (4 篇)    #   🔗 Hybrid 领域 — OSC / AudioLink
@@ -55,14 +57,14 @@ VRChat-Agent-Open-Memory-Library/
 │   ├── misc/       (4 篇)    #   📌 杂项 — 后处理 / 无障碍
 │   ├── journal/    (5 篇)    #   📝 会话记忆 — 临时记录
 │   │
-│   ├── meta/       (3 篇)    #   🛠️ v2.0.0 新增：知识库治理体系
+│   ├── meta/       (3 篇)    #   🛠️ 知识库治理体系
 │   │   ├── kb-protocol.md    #   知识写入流程 + 维护协议 + 审计标准
-│   │   ├── working-modes.md  #   6 工作模式完整定义（从 SOUL.md 瘦身迁移）
+│   │   ├── working-modes.md  #   6 工作模式完整定义
 │   │   └── auxiliary-scripts.md # 5 个维护脚本清单
 │   │
 │   └── _curator_tools/       #   🔮 策展工具预留目录
 │
-├── memory v1.0.0/            # 📦 v1.0.0 归档（295 文件，供 diff 对比）
+├── memory v1.0.0/            # 📦 v1.0.0 归档
 ├── CHANGELOG.md              # 📝 版本更新日志
 ├── LICENSE                   # 📜 MIT License
 └── README.md                 # 📖 本文件
@@ -89,7 +91,7 @@ VRChat-Agent-Open-Memory-Library/
 
 本库设计为 **平台无关**，可适配多种 AI Agent 系统。以下是各平台的推荐加载方案：
 
-### 1. GitHub Copilot (VS Code) ← 推荐
+### 1. GitHub Copilot (VS Code)
 
 ```
 直接在 VS Code 中打开本仓库作为 workspace。
@@ -120,7 +122,7 @@ Memory Root = memory/
 
 直接将 `SOUL.md` 内容复制到 Agent 的 System Prompt 字段，`memory/` 目录作为知识库附加文件。
 
-### 4. 通用 LLM Chat (ChatGPT / Claude Web / DeepSeek)
+### 4. 通用 LLM Chat (ChatGPT / Claude Web / DeepSeek) <- 不推荐
 
 ```markdown
 # 手动加载流程
@@ -141,7 +143,7 @@ Memory Root = memory/
 
 ---
 
-## 🗂️ 知识库结构（memory/）
+## 🗂️ 知识库结构
 
 ---
 
@@ -174,8 +176,6 @@ Memory Root = memory/
 | **C** | 社区标准 | 高质量开源项目（如 lilToon, MA）、跨源验证一致的结论 | 采纳但标注项目来源 |
 | **D** | 优秀案例 | 知名 World/Avatar 的实现分析 | 标注【参考案例】|
 | **E** | 工程推理 | 基于 Tier A/B 知识 + 工程经验的逻辑推导 | 标注【推断】|
-
-> **核心原则**：Agent 回答时必须区分 FACT（确定事实）和 INFERENCE（推断）。证据不足时输出 "Missing Information"，绝不强行回答。
 
 ### 3. YAML 元数据标准化（v2.0.0 新增）
 
@@ -241,11 +241,11 @@ confidence: High | Medium | Low
 
 ## 🔑 核心特性
 
-### 🧭 多领域路由系统
+### 🧭 路由系统动态搜索
 
 `index.md` 作为**路由地图**，Agent 在回答前先识别领域（World/Avatar/Hybrid/Platform/VRChatSDK），再定位到对应目录检索——避免跨域混淆。
 
-### ⚡ 30 秒启动协议
+### ⚡ 30 秒启动协议 - 本质与Skill类似
 
 `_always-load.md` 定义了 Agent **每次回答前必须执行的检查**：
 - 领域识别（Avatar? World? Hybrid?）
@@ -253,7 +253,7 @@ confidence: High | Medium | Low
 - World 代码生成的 10 项硬约束（禁止 List/Dict/LINQ/async/coroutine…）
 - 回答完整性自检（FACT/INFERENCE 区分、风险标记、未知项标记）
 
-### 🎯 UdonSharp 专项审查系统
+### 🎯 UdonSharp 专项审查系统 
 
 `reviews/` 目录提供完整的代码质量保障：
 - **15 项检查清单**：继承、SyncMode、语言合规、网络同步、性能、安全
@@ -271,7 +271,7 @@ confidence: High | Medium | Low
 - ❌ 未暴露 API 黑名单（List/Dictionary/反射/线程/异常…）
 - 🔧 API 检查器代码模式（静态分析用）
 
-### 🛠️ 知识库治理体系（v2.0.0 新增）
+### 🛠️ 知识库治理体系 <- 当模型需要更新memory时的标准流程 - auxiliary-scripts指向Python脚本部分暂时缺失。
 
 `memory/meta/` 目录定义了知识库的自我维护机制：
 
@@ -322,7 +322,7 @@ workflow:
 
 ---
 
-## ⚠️ 核心约束速查
+## ⚠️ 核心约束速查 --该部分主要来自工程实践总结
 
 > 以下为 VRChat World/Avatar 开发的**绝对红线**，Agent 和创作者在使用本库时必须遵守：
 
@@ -352,7 +352,7 @@ workflow:
 | 🔧 **核心工具** | Modular Avatar、VRCFury、lilToon、AAO、ClientSim | `avatar/` `world/clientsim/` |
 | 📦 **开源项目** | Sardinal、ULocalization、UdonVoiceUtils、LuraSwitch2、VizVid | `sources/` `patterns/` |
 | 👥 **社区智慧** | VRCD 文档库、DeepWiki、Discord 讨论、创作者笔记 | `misc/` `references/` |
-| ✍️ **作者实践** | Kuriko 个人笔记、项目经验、代码审查记录 | `reviews/` `journal/` |
+| ✍️ **开发实践** | 个人笔记、项目经验、代码审查记录 | `reviews/` `journal/` |
 
 ---
 
@@ -385,7 +385,7 @@ workflow:
 
 ## 🤝 贡献指南
 
-本库设计为 **AI Agent 优先**的知识系统。如果您希望贡献：
+本库设计为 **AI Agent 优先**的知识系统。如果您希望自行升级，请:
 
 1. **知识贡献**：确保新知识附带 Source 标注和 Last Verified 日期
 2. **可信度标注**：按 Tier A~E 分级，区分 FACT 和 INFERENCE
@@ -393,6 +393,15 @@ workflow:
 4. **交叉引用**：在相关文件间建立双向链接
 5. **格式规范**：遵循现有文件的 Markdown 结构和元数据格式
 6. **审查验证**：涉及代码模式的知识需经过至少一次实际项目验证
+
+如果您希望参与本仓库的迭代过程，请加入QQ群聊：
+
+```
+902222352
+```
+
+提供 原始知识文件 (如官方文档/个人笔记/QA文档/工程 等资料) 并且详细叙述知识来源的可靠性以及您的人工审查结论。
+如果采用则会由Master进行二次审查与模型自审，确定置信度后再决定是否纳入知识库体系中。
 
 ---
 

@@ -1,0 +1,210 @@
+---
+title: lilToon 毛发设置
+category: avatar
+subcategory: shader
+
+knowledge_level: applied
+status: active
+
+tags:
+  - avatar
+  - shader
+  - liltoon
+
+aliases:
+  - "lilToon"
+
+related:
+  - render-modes.md
+  - optimization.md
+  - stencil.md
+  - outline.md
+
+source: 本地知识库整理
+source_type: community
+version: 1.0
+upstream_version: v2.3.2 (2025-10-29)
+last_review: 2026-06-21
+confidence: Medium
+---
+# lilToon 毛发设置
+
+---
+
+## 概述
+
+毛发系统（Fur）通过生成多层几何体模拟毛发效果。
+
+### 渲染模式
+
+| 模式 | 说明 | 负荷 |
+|------|------|------|
+| **ファー** | 全透明毛发 | 🔴 高 |
+| **ファー(カットアウト)** | Cutout 毛发 | 🟠 中高 |
+| **ファー(2パス)** | 混合毛发 | 🔴 高 |
+
+---
+
+## 毛发参数详解
+
+### 基本参数
+
+| 参数 | 说明 |
+|------|------|
+| **ノーマルマップ** | 作为毛发方向的法线贴图 |
+| **向き** | 毛发方向 |
+| **長さ** | 毛发长度 (R通道) |
+| **VertexColor -> Vector** | 顶点颜色作为毛发方向 |
+| **重力** | 重力影响 |
+| **ランダム化** | 方向随机化 |
+| **ノイズ** | 生成噪声纹理 (R通道) |
+| **Tiling** | 噪声细度（毛发细度） |
+| **Offset** | 噪声偏移 |
+| **マスク** | 毛发遮罩 (R通道) |
+| **陰影** | 阴影强度 |
+| **Mesh Type** | 网格生成方法 |
+| **レイヤー数** | 生成层数 |
+| **根本の太さ** | 根部粗细 |
+| **接触強度** | 接触变形强度 |
+
+---
+
+## 毛发方向
+
+### 方向模式
+
+| 模式 | 说明 |
+|------|------|
+| **Helix** | 螺旋方向 |
+| **Spherical** | 球形方向 |
+| **Circular** | 环形方向 |
+| **Tangent** | 切线方向 |
+
+### 顶点颜色方向
+
+```
+RGB = 法线方向
+A = 长度/粗细
+```
+
+### 预设纹理
+
+lilToon 自带两种切线纹理：
+- `lil_tangent.png` — 标准切线
+- `lil_tangent_circular.png` — 环形切线
+
+---
+
+## 噪声系统
+
+### 噪声纹理
+
+内置噪声纹理：
+- `lil_noise_fur.png`
+- `lil_noise_fur_2.png`
+
+### 参数影响
+
+```
+Tiling ↑ = 毛发更细
+Offset = 毛发分布偏移
+```
+
+---
+
+## 接触功能 (Contact)
+
+### 概述
+顶点光照接触检测，可响应 Point Light。
+
+### 限制
+- 最大 4 个接触光源
+- 需要特定设置的 Point Light
+
+### Point Light 设置
+
+| 属性 | 值 |
+|------|-----|
+| Range | `x.xx22` 格式（下3-4位为2） |
+| Color | RGBA = (0.0, 0.0, 0.0, 1.0) |
+| Mode | Realtime |
+| Intensity | 1 |
+| Render Mode | Not Important |
+
+### 示例
+```
+Range = 3.5 → 实际 Range = 3.52
+Range = 12.2 → 实际 Range = 12.22
+```
+
+---
+
+## 性能优化
+
+### 负荷因素
+
+| 因素 | 影响 |
+|------|------|
+| **レイヤー数** | 层数越多负荷越高 |
+| **Mesh Type** | 细分模式负荷高 |
+| **毛发密度** | Tiling 越小密度越高 |
+
+### 优化建议
+
+1. **降低レイヤー数** — 减少层数
+2. **使用カットアウト模式** — 比全透明负荷低
+3. **合理使用 Tiling** — 避免过密毛发
+4. **Bake 纹理** — 减少运行时计算
+
+---
+
+## 与其他系统配合
+
+### Stencil 使用
+
+毛发可用于 Stencil 遮罩：
+- 头发着色器写入 Stencil
+- 毛发着色器读取并覆盖
+
+### 轮廓线
+
+毛发物体可单独配置轮廓线：
+- 使用 `_lil/[Optional] lilToonOutlineOnly` 着色器
+- 法线轮廓更平滑
+
+---
+
+## 典型应用场景
+
+### 毛茸茸动物
+
+```
+レイヤー数: 30-50
+Tiling: 20-40
+根本の太さ: 0.3-0.5
+```
+
+### 头发刘海
+
+```
+レイヤー数: 15-25
+Tiling: 30-50
+长发: 使用长发着色器
+```
+
+### 草地/毛皮装饰
+
+```
+レイヤー数: 20-40
+Tiling: 10-30
+重力: 根据需求调整
+```
+
+---
+
+## 相关文档
+
+- [渲染模式](render-modes.md) — 毛发模式详解
+- [优化指南](optimization.md) — 性能优化
+- [Stencil 设置](stencil.md) — 3D 空间遮罩
+- [轮廓线](outline.md) — 描边配置

@@ -26,9 +26,6 @@ related:
 # Graph Elements | Graph 元素
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/graph-elements/
-> 更新日期: 2024-05-29
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 Graph 中除 **Nodes(节点)** 外的其他元素。**这些元素不影响 Graph 的功能或编译**,只影响可读性。
 

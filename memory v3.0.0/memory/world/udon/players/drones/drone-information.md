@@ -25,7 +25,6 @@ related:
 ---
 # Drone Information — Drone 信息查询
 
-> Domain: World / Udon / Players / Drones
 > Subtype: API 详解 — 状态/位置/旋转/速度/传送
 > 父级索引: [`./index.md`](./index.md)
 > 抓取日期: 2026-06-15

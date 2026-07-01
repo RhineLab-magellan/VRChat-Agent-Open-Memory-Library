@@ -25,7 +25,6 @@ related:
 ---
 # KB Index — Multi-Domain 路由地图
 
-> VRChatAgent v3.0 | 2026-07-01 | Poiyomi Shaders 8 主题知识完整入库 ⭐NEW
 
 ---
 

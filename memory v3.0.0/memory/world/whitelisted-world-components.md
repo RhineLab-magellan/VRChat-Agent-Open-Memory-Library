@@ -28,7 +28,6 @@ related:
 > 源 URL Last Updated: **Nov 25, 2025**
 > 抓取日期: 2026-06-15
 > 置信度: High
-> Domain: World → API 白名单 / Script 暴露 / Udon VM
 
 ---
 

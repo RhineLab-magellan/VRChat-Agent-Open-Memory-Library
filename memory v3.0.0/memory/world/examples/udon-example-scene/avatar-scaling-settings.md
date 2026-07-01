@@ -27,7 +27,6 @@ related:
 
 > Udon Example Scene · Avatar Scaling 子页面
 > 源文档:https://creators.vrchat.com/worlds/examples/udon-example-scene/avatar-scaling-settings/
-> 最后更新:2026-06-15
 
 ---
 

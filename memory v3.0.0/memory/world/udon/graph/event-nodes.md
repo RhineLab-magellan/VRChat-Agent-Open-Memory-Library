@@ -27,9 +27,6 @@ related:
 # Udon Event Nodes | 事件节点
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/event-nodes/
-> 更新日期: 2025-11-25
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 Udon 中所有"Event" 类别节点的清单。脚本通过 Event 监听行为并触发逻辑链。
 

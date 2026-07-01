@@ -30,7 +30,6 @@ related:
 # ClientSim
 
 > 来源: [VRChat Creator Docs - ClientSim](https://creators.vrchat.com/worlds/clientsim/)
-> 索引日期: 2026-06-15
 > 原始仓库: [github.com/vrchat-community/creator-docs](https://github.com/vrchat-community/creator-docs)
 
 ---

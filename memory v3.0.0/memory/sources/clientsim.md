@@ -23,7 +23,6 @@ related:
 # ClientSim 知识库(项目仓库元数据)
 
 > 来源: vrchat-community/ClientSim (DeepWiki 文档)
-> 索引日期: 2026-06-10
 > 原始仓库: github.com/vrchat-community/ClientSim
 > Last indexed: 26 May 2025 (commit 2fc16f)
 

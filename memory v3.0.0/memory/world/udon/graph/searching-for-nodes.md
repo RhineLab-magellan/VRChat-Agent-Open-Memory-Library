@@ -28,9 +28,6 @@ related:
 # Searching for Nodes | 节点搜索
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/searching-for-nodes/
-> 更新日期: 2024-05-29
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 5 种节点搜索方式,适用于不同场景。
 

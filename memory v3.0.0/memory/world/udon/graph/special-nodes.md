@@ -28,9 +28,6 @@ related:
 # Special Nodes | 特殊节点
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/special-nodes/
-> 更新日期: 2026-01-26
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 "Special" 类别包含**自定义变量、自定义事件、流程控制、与其他 UdonBehaviours 通信**的节点。
 

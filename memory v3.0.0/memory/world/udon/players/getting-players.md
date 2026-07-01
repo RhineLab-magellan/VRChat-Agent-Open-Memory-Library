@@ -25,7 +25,6 @@ related:
 ---
 # Getting Players — 获取玩家对象
 
-> Domain: World / Udon / Players
 > Subtype: API 详解
 > 底层引用: `memory/api/player-api.md`
 > 抓取日期: 2026-06-15

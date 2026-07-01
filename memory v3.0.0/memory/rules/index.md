@@ -20,13 +20,14 @@ related:
   - "rules/udonsharp-language-limits.md"
   - "rules/networking-rules.md"
   - "rules/performance-rules.md"
+  - "rules/quest-constraints.md"
   - FACT.md
   - "patterns/index.md"
 
 source: 本地知识库整理
 source_type: community
-version: 1.0
-last_review: 2026-06-15
+version: 1.1
+last_review: 2026-07-01
 confidence: High
 ---
 # Rules — 约束与强制要求速查

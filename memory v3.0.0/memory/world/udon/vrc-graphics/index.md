@@ -29,7 +29,6 @@ related:
 # VRC Graphics | VRCGraphics / VRCShader / VRCCameraSettings / VRCQualitySettings
 
 > 来源: VRChat 官方文档 — https://creators.vrchat.com/worlds/udon/vrc-graphics/
-> 索引日期: 2026-06-15
 > SDK: 3.5.0+
 > 父文档: `memory/world/udon/vrc-graphics/index.md` 自身(原 `memory/world/vrc-graphics.md` 已删除,内容已整合至本文件及子页面)
 > 子页面: `asyncgpureadback.md`、`vrchat-shader-globals.md`

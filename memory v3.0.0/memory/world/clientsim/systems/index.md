@@ -26,7 +26,6 @@ related:
 # ClientSim Systems
 
 > 来源: [VRChat Creator Docs - Systems](https://creators.vrchat.com/worlds/clientsim/systems/)
-> 索引日期: 2026-06-15
 
 ---
 

@@ -25,7 +25,6 @@ related:
 ---
 # UdonSharp Configuration
 
-> Domain: World
 > SDK Version: 3.10.x
 > Last Updated (官方): 2024-08-06
 > Last Updated (本地化): 2026-06-15

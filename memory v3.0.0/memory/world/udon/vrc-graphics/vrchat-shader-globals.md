@@ -25,7 +25,6 @@ related:
 # VRChat Shader Globals | `_VRChat*` 全局变量
 
 > 来源: VRChat 官方文档 — https://creators.vrchat.com/worlds/udon/vrc-graphics/vrchat-shader-globals/
-> 索引日期: 2026-06-15
 > Last Published: 2026-02-23
 > 父文档: `memory/world/udon/vrc-graphics/index.md` (本文件即父文档内 VRC Graphics 体系一部分,原 `memory/world/vrc-graphics.md` 占位页已删除)
 

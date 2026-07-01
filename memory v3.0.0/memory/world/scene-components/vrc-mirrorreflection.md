@@ -32,7 +32,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_mirrorreflection/
 > 官方类名: `VRC_MirrorReflection`
-> 最后更新: 2026-06-30
 > 最新更新日期: 2024-07-31 (基础) / 2026-05-28 (2026.2.1 Open Beta Build 1832 时序变更修复)
 
 ---

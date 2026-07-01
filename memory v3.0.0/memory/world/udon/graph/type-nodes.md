@@ -30,9 +30,6 @@ related:
 # Type Nodes | 类型引用节点
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/type-nodes/
-> 更新日期: 2025-04-09
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 > ⚠️ **重定向说明**: `https://creators.vrchat.com/worlds/udon/graph/type-nodes`/ 返回 **301 Moved Permanently**。
 > 实际位置: `https://creators.vrchat.com/worlds/udon/graph/type-nodes/`(带尾部斜杠/)。

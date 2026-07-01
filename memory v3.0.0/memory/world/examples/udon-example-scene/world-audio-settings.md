@@ -27,7 +27,6 @@ related:
 
 > Udon Example Scene · 世界音频设置子页面
 > 源文档:https://creators.vrchat.com/worlds/examples/udon-example-scene/world-audio-settings/
-> 最后更新:2026-06-15
 
 ---
 

@@ -23,7 +23,6 @@ related:
 ---
 # Drone API 总览 (VRCDroneApi)
 
-> Domain: World / Udon / Players / Drones
 > Subtype: API 总览
 > 父级索引: [`memory/world/udon/players/index.md`](../index.md)
 > 抓取日期: 2026-06-15

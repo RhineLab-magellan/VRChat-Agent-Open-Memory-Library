@@ -25,7 +25,6 @@ related:
 ---
 # Getting Drones — 获取 Drone 实例
 
-> Domain: World / Udon / Players / Drones
 > Subtype: API 详解 — 获取方法 + Trigger 事件
 > 父级索引: [`./index.md`](./index.md)
 > 抓取日期: 2026-06-15

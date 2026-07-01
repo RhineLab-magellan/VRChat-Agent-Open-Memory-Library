@@ -32,7 +32,6 @@ related:
 
 > SDK 内置示例场景 · VRChat Worlds 官方标准参考
 > 源文档:https://creators.vrchat.com/worlds/examples/udon-example-scene/
-> 最后更新:2026-06-15
 > SDK 版本参考:VRChat Worlds SDK(含 VRCWorldSettings、UdonProgramSources 等)
 
 ---

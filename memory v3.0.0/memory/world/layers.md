@@ -31,7 +31,6 @@ related:
 > 源 URL Last Updated: **Mar 26, 2026**
 > 抓取日期: 2026-06-15
 > 置信度: High
-> Domain: World → Layer / Physics / Sticker / Interaction
 
 ---
 

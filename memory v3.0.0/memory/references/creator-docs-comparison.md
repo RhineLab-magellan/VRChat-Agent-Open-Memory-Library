@@ -28,7 +28,6 @@ related:
 # VRChat Creator Docs 对比记录
 
 > 来源: https://deepwiki.com/vrchat-community/creator-docs
-> 索引日期: 2026-06-04 (commit 8be404)
 > 原始文档: https://github.com/vrchat-community/creator-docs
 
 ---

@@ -27,8 +27,6 @@ related:
 ---
 # Position Sync(位置同步)
 
-> Domain: World / Examples / Persistence
-> 索引日期: 2026-06-15
 > SDK Version: 3.4.x+
 > 关联底层: `memory/api/persistence.md`
 

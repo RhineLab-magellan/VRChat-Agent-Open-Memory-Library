@@ -30,7 +30,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_enablepersistence/
 > 官方类名: `VRCEnablePersistence`
-> 最后更新: 2026-06-15
 > 最新更新日期: 2024-11-19
 
 ---

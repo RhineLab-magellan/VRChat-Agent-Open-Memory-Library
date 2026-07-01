@@ -32,8 +32,6 @@ related:
 
 > 来源: https://creators.vrchat.com/worlds/udon/
 > 抓取日期: 2026-06-15
-> 最后更新: 2024-12-10
-> Domain: World / Udon
 > 状态: ✅ FACT (官方入口文档)
 
 ---

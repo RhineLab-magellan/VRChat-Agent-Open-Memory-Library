@@ -27,7 +27,6 @@ related:
 
 > Udon Example Scene · 视频同步子页面
 > 源文档:https://creators.vrchat.com/worlds/examples/udon-example-scene/udon-video-sync-player/
-> 最后更新:2026-06-15
 
 ---
 

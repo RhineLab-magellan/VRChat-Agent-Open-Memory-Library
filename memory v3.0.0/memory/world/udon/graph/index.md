@@ -27,9 +27,6 @@ related:
 # Udon Node Graph | 主页
 
 > 来源: https://creators.vrchat.com/worlds/udon/graph/
-> 更新日期: 2024-08-21
-> 索引日期: 2026-06-15
-> Domain: World / Udon
 
 Udon Node Graph 是 Udon 程序的**默认可视化创建界面**。如果你想直接看示例,可以参考 Udon Example Scene。
 

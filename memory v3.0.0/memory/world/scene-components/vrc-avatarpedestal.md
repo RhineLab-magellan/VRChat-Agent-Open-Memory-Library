@@ -29,7 +29,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_avatarpedestal/
 > 官方类名: `VRC_AvatarPedestal`
-> 最后更新: 2026-06-15
 
 ---
 

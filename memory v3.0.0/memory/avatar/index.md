@@ -5,7 +5,7 @@ knowledge_level: applied
 status: active
 source: 本地知识库整理
 source_type: community
-version: 1.3
+version: 1.4
 last_review: 2026-07-01
 confidence: Medium
 tags:
@@ -32,6 +32,7 @@ related:
   - ma2bt.md
   - "avatar/avatar-parameter-staged-sync.md"
   - "avatar/ma-component-cards.md"
+  - "avatar/contact.md"
   - "avatar/shader/other-shaders.md"
   - "avatar/shader/unlitwf/index.md"
   - "avatar/shader/orl/index.md"
@@ -47,7 +48,6 @@ related:
 ---
 # Avatar Domain — Knowledge Base
 
-> Domain: Avatar | 状态: ✅ 已建设 | 更新: 2026-07-01 (Poiyomi 8 主题知识完整入库)
 
 ---
 

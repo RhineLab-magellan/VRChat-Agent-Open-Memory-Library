@@ -27,6 +27,7 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/textmeshpro/
 > 官方类名: `TextMeshProUGUI`, `TextMeshPro` (基础类 `TMP_Text`)
+> 最后更新: 2026-06-15
 
 ---
 
@@ -222,9 +223,9 @@ tmpText.text = $"Player: <color=#FFD700>{playerName}</color>";
 ## 引用
 
 - 官方文档: https://creators.vrchat.com/worlds/components/textmeshpro/
-- TMP 子组件:
-  - `TMP_Text` 基础类(TextMeshProUGUI / TextMeshPro)
-  - `TMP_Dropdown`(下拉菜单)
-  - `TMP_InputField`(输入框)
+- TMP 子页面:
+  - [TextMeshPro 总览](../textmeshpro.md) (基础)
+  - TMP Dropdown (后续任务)
+  - TMP InputField (后续任务)
 - TextMeshPro Unity 文档: https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/
 - API 文档: https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/api/TMPro.html

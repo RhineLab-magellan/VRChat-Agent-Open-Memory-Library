@@ -30,7 +30,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_objectsync/
 > 官方类名: `VRCObjectSync`
-> 最后更新: 2026-06-30
 > 最新更新日期: 2025-03-07 (基础) / 2026-06-22 (2026.2.3 Build 1864 可靠性增强)
 
 ---

@@ -26,8 +26,6 @@ related:
 ---
 # VRChat OSC 协议完整数据库
 
-> 版本: 1.2 | 更新: 2026-06-30 | 来源: docs.vrchat.com + changelog + vrchat-community/osc
-
 ---
 
 ## 目录

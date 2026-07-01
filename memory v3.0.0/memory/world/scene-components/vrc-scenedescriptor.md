@@ -33,7 +33,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_scenedescriptor/
 > 官方类名: `VRCSceneDescriptor`
-> 最后更新: 2026-06-15
 > 最新更新日期: 2025-12-11
 
 ---

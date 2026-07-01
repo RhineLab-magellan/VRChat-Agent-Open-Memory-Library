@@ -27,8 +27,6 @@ related:
 
 > 来源: https://creators.vrchat.com/worlds/udon/video-players/www-whitelist/
 > 抓取日期: 2026-06-15
-> 最后更新: 2024-12-11
-> Domain: World / Udon / Video / Whitelist
 > 状态: ✅ FACT (官方文档)
 > 任务: task-17
 

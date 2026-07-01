@@ -26,7 +26,6 @@ related:
 # VRCAsyncGPUReadback | 异步 GPU 读回
 
 > 来源: VRChat 官方文档 — https://creators.vrchat.com/worlds/udon/vrc-graphics/asyncgpureadback/
-> 索引日期: 2026-06-15
 > SDK: 3.5.0+
 > 父文档: `memory/world/udon/vrc-graphics/index.md` (本文件即父文档内 VRC Graphics 体系一部分,原 `memory/world/vrc-graphics.md` 占位页已删除)
 

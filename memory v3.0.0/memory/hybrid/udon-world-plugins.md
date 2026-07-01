@@ -27,7 +27,6 @@ related:
 > **Domain**: Hybrid
 > **类型**: 推荐工具索引(Group C — 工具使用指南)
 > **目标读者**: VRChat World 创作者(推荐安装的插件) + 玩家(识别 World 能力)
-> **更新日期**: 2026-06-20
 > **状态**: ✅ 已收录 2 个插件(TLP UdonVoiceUtils + VizVid VVMW)
 
 ---

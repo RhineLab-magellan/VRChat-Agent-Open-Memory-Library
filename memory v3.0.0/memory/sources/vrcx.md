@@ -24,7 +24,6 @@ related:
 ---
 # VRCX — VRChat 伴侣应用
 
-> 知识库索引: `sources/vrcx.md`
 > 收录日期: 2026-06-11
 > 分类: 社区工具 / VRChat API 客户端
 

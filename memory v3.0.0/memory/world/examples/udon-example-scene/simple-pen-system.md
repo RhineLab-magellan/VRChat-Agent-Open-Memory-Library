@@ -27,7 +27,6 @@ related:
 
 > Udon Example Scene · 画笔系统子页面
 > 源文档:https://creators.vrchat.com/worlds/examples/udon-example-scene/simple-pen-system/
-> 最后更新:2026-06-15
 
 ---
 

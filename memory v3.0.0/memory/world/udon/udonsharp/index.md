@@ -24,7 +24,6 @@ related:
 ---
 # UdonSharp - VRChat SDK C# 编程前端
 
-> Domain: World
 > SDK Version: 3.10.x (持续更新)
 > Last Updated (官方): 2026-02-26
 > Last Updated (本地化): 2026-06-15

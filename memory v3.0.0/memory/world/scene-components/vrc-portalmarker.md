@@ -29,7 +29,6 @@ related:
 >
 > 来源: https://creators.vrchat.com/worlds/components/vrc_portalmarker/
 > 官方类名: `VRC_PortalMarker`
-> 最后更新: 2026-06-15
 > 最新更新日期: 2025-05-14
 
 ---

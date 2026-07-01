@@ -29,7 +29,6 @@ related:
 ---
 # Player API 总览 (VRCPlayerApi)
 
-> Domain: World / Udon / Players
 > Subtype: API 总览
 > 底层引用: `memory/api/player-api.md`
 > 抓取日期: 2026-06-15

@@ -25,7 +25,6 @@ related:
 # Script Execution Order
 
 > 来源: [VRChat Creator Docs - Script Execution Order](https://creators.vrchat.com/worlds/clientsim/systems/script-execution-order/)
-> 索引日期: 2026-06-15
 
 ---
 

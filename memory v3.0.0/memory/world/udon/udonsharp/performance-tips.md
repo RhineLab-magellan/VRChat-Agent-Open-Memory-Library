@@ -27,7 +27,6 @@ related:
 ---
 # UdonSharp Performance Tips
 
-> Domain: World
 > SDK Version: 3.10.x
 > Last Updated (官方): 2025-01-13
 > Last Updated (本地化): 2026-06-15

@@ -25,7 +25,6 @@ related:
 ---
 # Player Positions — 玩家位置/旋转/追踪/速度/传送
 
-> Domain: World / Udon / Players
 > Subtype: API 详解
 > 底层引用: `memory/api/player-api.md`
 > 抓取日期: 2026-06-15

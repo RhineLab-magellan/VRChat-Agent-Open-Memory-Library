@@ -38,7 +38,6 @@ related:
 > VRChat Worlds 专用组件索引
 >
 > 来源: https://creators.vrchat.com/worlds/components/
-> 最后更新: 2026-06-15
 > 本任务版本: 覆盖 9 个核心组件 (达到单任务 URL 上限)
 
 ---

@@ -25,7 +25,6 @@ related:
 ---
 # Player Forces — 玩家移动力 / 速度 / 重力
 
-> Domain: World / Udon / Players
 > Subtype: API 详解
 > 底层引用: `memory/api/player-api.md`
 > 抓取日期: 2026-06-15

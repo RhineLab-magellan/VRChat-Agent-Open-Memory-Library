@@ -1,1 +1,3 @@
 JOURNAL.jsonl
+__pycache__/
+*.pyc

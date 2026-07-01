@@ -28,51 +28,55 @@
 
 ---
 
-## 🏗️ v3.0.0 核心架构：Memory 
+## 🏗️ v3.0.0 核心架构
 
 ```
 VRChat-Agent-Open-Memory-Library/
 │
-├── SOUL.md                   # 🧬 Agent 身份系统 (v3.0)
-│   ├── Identity              #   Agent 角色定义与核心原则
-│   ├── Personality           #   工程人格：客观克制 · 精确不迎合 · 教学适应性
-│   ├── Domain Router         #   6 领域自动路由（Avatar/World/Hybrid/External/Research/Meta）
-│   ├── Working Modes ×6      #   Architect / Engineer / Reviewer / Teacher / Researcher / Curator
-│   ├── Evidence System       #   证据体系：[FACT] / [INFERENCE] / [UNKNOWN] / [CONFLICT]
-│   ├── Failure Policy        #   知识不足时的安全降级策略
-│   └── Retrieval Protocol    #   6 步知识检索协议
-│
-├── memory/                   # 📚 结构化知识库本体 (351 篇 / 3.26 MB)
-│   ├── _always-load.md       #   🔴 运行资料：领域识别 + 30s 核心约束 + 回答前自检
-│   ├── FACT.md               #   📋 基础引导：KB 架构 + 核心约束 + 修正记录
-│   ├── index.md              #   🧭 文件索引：按需求快速定位
-│   ├── JOURNAL.jsonl         #   📓 操作日志 (36+ 条记录)
-│   │
-│   ├── world/      (154 篇)  #   🌍 World 领域 — Udon/光照/烘焙/网络/持久化/示例
-│   ├── avatar/     (75 篇)   #   👤 Avatar 领域 — 改模/优化/Shader(Poiyomi+lilToon+5种)
-│   ├── api/        (18 篇)   #   📚 API 参考 — 网络/动画/音频/UI/持久化/类型暴露树
-│   ├── rules/      (8 篇)    #   ⚖️ 规则系统 — 硬约束与强制要求
-│   ├── patterns/   (22 篇)   #   🎯 设计模式 — 同步/状态机/位域/决策树
-│   ├── hybrid/     (6 篇)    #   🔗 Hybrid 领域 — OSC/AudioLink/VCC/ALCOM
-│   ├── platform/   (6 篇)    #   📱 Platform 领域 — Quest/跨平台/移动UI/Player Config
-│   ├── vrchatsdk/  (19 篇)   #   🌐 VRChatSDK — HTTP API 完整参考
-│   ├── sources/    (25 篇)   #   🔖 来源追踪 — 开源项目/VPM镜像站/ClientSim
-│   ├── reviews/    (5 篇)    #   ✅ 审查系统 — 15 项清单 + 32+ 失败案例 + 严重性模型
-│   ├── references/ (2 篇)    #   📎 参考资料 — 元数据与对比
-│   ├── misc/       (4 篇)    #   📌 杂项 — 后处理/无障碍
-│   │
-│   ├── meta/       (3 篇)    #   🛠️ 知识库治理体系
-│   │   ├── kb-protocol.md    #   知识写入流程 + 维护协议 + 审计标准
-│   │   ├── working-modes.md  #   6 工作模式完整定义
-│   │   └── auxiliary-scripts.md # 5 个维护脚本清单
-│   │
-│   └── _curator_tools/       #   🔮 策展工具预留目录 (A19 治理脚本)
-│
-├── memory v1.0.0/            # 📦 v1.0.0 归档
-├── memory v3.0.0/            # ⭐ v3.0.0 主工作目录 (SOUL.md + memory/)
+├── README.md                 # 📖 项目说明
 ├── CHANGELOG.md              # 📝 版本更新日志
 ├── LICENSE                   # 📜 MIT License
-└── README.md                 # 📖 本文件
+│
+├── memory v3.0.0/            # ⭐ 知识库主目录
+│   ├── SOUL.md               # 🧬 Agent 身份系统 (v3.0)
+│   │   ├── Identity          #   Agent 角色定义与核心原则
+│   │   ├── Personality       #   工程人格：客观克制 · 精确不迎合 · 教学适应性
+│   │   ├── Domain Router     #   6 领域自动路由
+│   │   ├── Working Modes ×6  #   Architect/Engineer/Reviewer/Teacher/Researcher/Curator
+│   │   ├── Evidence System   #   证据体系：[FACT]/[INFERENCE]/[UNKNOWN]/[CONFLICT]
+│   │   └── Retrieval Protocol #  6 步知识检索协议
+│   │
+│   └── memory/               # 📚 结构化知识库本体 (351 篇 / 3.26 MB)
+│       ├── _always-load.md   #   🔴 运行资料：领域识别 + 30s 核心约束
+│       ├── FACT.md           #   📋 基础引导：KB 架构 + 核心约束 + 修正记录
+│       ├── index.md          #   🧭 文件索引：按需求快速定位
+│       ├── JOURNAL.jsonl     #   📓 操作日志 (36+ 条记录)
+│       │
+│       ├── world/    (154篇) #   🌍 World — Udon/光照/烘焙/网络/持久化/示例
+│       ├── avatar/   (75篇)  #   👤 Avatar — 改模/优化/Shader/信任与安全
+│       ├── sources/  (25篇)  #   🔖 来源追踪 — 开源项目/VPM镜像站/ClientSim
+│       ├── patterns/ (22篇)  #   🎯 设计模式 — 同步/状态机/位域/决策树
+│       ├── vrchatsdk/(19篇)  #   🌐 VRChatSDK — HTTP API 完整参考
+│       ├── api/      (18篇)  #   📚 API 参考 — 类型暴露树/网络/动画/音频/UI
+│       ├── rules/    (8篇)   #   ⚖️ 规则系统 — 语言限制/网络/性能/VM架构
+│       ├── hybrid/   (6篇)   #   🔗 Hybrid — OSC/AudioLink/VCC/ALCOM
+│       ├── platform/ (6篇)   #   📱 Platform — Quest/跨平台/移动UI
+│       ├── reviews/  (5篇)   #   ✅ 审查系统 — 15项清单+32+失败案例
+│       ├── misc/     (4篇)   #   📌 杂项 — 后处理/无障碍
+│       ├── meta/     (3篇)   #   🛠️ 治理体系 — 写入协议/工作模式/脚本清单
+│       ├── references/(2篇)  #   📎 参考资料 — 文档对比/知识源对照
+│       └── _curator_tools/   #   🔮 策展工具预留目录
+│
+├── Auxiliary script/         # 🔧 知识库维护脚本 (59 个 Python 脚本)
+│   ├── validation_script.py  #   全库 YAML/frontmatter 验证
+│   ├── url_health_check.py   #   604 个外部链接健康检查
+│   ├── version_audit_script.py # 工具版本时效性审计
+│   ├── fix_dead_links.py     #   死链批量修复
+│   ├── fix_aliases_v1.py     #   aliases 批量补充
+│   ├── fix_related_v2.py     #   related 批量补充
+│   └── ... (53 个辅助脚本)  #   治理/迁移/修复/审查工具
+│
+└── Training data/            # 📤 社区贡献入口 (贡献指南见下方)
 ```
 
 ---
@@ -286,7 +290,23 @@ confidence: High | Medium | Low
 |------|------|
 | `kb-protocol.md` | 知识写入流程（新发现→journal→具体文件→索引→核心约束→FACT）、维护协议（审计→分析→修复→验证→记录）、审计得分标准（A:90+ / B:78 / C/D） |
 | `working-modes.md` | 6 种工作模式的完整定义，含触发场景、输出格式、核心知识、审查重点 |
-| `auxiliary-scripts.md` | 5 个 Python 维护脚本（validation/governance/version_audit/url_health/pure_knowledge_audit）的用途与运行顺序 |
+| `auxiliary-scripts.md` | 维护脚本清单与运行顺序（对应仓库根目录 `Auxiliary script/`） |
+
+### 🔧 Auxiliary script/ — 知识库维护工具集
+
+仓库根目录 `Auxiliary script/` 包含 **59 个 Python 脚本**，覆盖知识库全生命周期维护：
+
+| 类别 | 脚本示例 | 用途 |
+|------|---------|------|
+| 🔍 **验证审计** | `validation_script.py`, `pure_knowledge_audit.py`, `audit_compare_backup.py` | 全库 YAML/frontmatter/内容完整性验证 |
+| 🔗 **链接维护** | `url_health_check.py`, `fix_dead_links.py`, `fix_final_dead_links.py`, `_diag_deadlink.py` | 604 个外部链接健康检查与批量修复 |
+| 📇 **元数据补全** | `fix_aliases_v1.py`, `fix_related_v2.py`, `refine_shader_source_type.py`, `check_aliases.py` | aliases/related/source_type 批量补充 |
+| 🏷️ **版本管理** | `version_audit_script.py`, `upgrade_vrchatsdk.py` | 工具版本时效性审计与升级 |
+| 🔄 **迁移修复** | `migration_script.py`, `restore_lost_content.py`, `fix_orphan_docs.py`, `strip_legacy_blocks.py` | 大规模内容迁移与损坏修复 |
+| 📊 **分析审查** | `analyze_aliases_quality.py`, `check_related_count.py`, `deep_diff_check.py` | aliases/related 质量深度分析 |
+| 🛠️ **通用工具** | `_fix_common.py`, `governance_script.py`, `find_all_empty_sections.py` | 通用修复函数库与治理辅助 |
+
+这些脚本支撑了 A18/A19/A20 治理周期的自动化执行，是知识库从 B+ (88分) 提升至 A- (92分) 的关键基础设施。
 
 ---
 

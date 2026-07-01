@@ -1,0 +1,2042 @@
+[
+  {
+    "file": "api/animator.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/api-checker.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/audio.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/dynamics.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/events-reference.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/not-exposed.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/official-doc-clarifications.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Official Documentation Clarifications",
+      "api: Official Documentation Clarifications"
+    ],
+    "aliases_new": [
+      "Official Documentation Clarifications"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/pickups.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/player-api.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player API",
+      "API: Player API"
+    ],
+    "aliases_new": [
+      "Player API"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/ui.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "UI (VRChat World UI)",
+      "API: UI (VRChat World UI)"
+    ],
+    "aliases_new": [
+      "UI (VRChat World UI)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "api/vrchat-advanced-apis.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat Advanced APIs",
+      "API: VRChat Advanced APIs"
+    ],
+    "aliases_new": [
+      "VRChat Advanced APIs"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/animator-system.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/avatar-modding-guide.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat Avatar 改模基础知识",
+      "avatar: VRChat Avatar 改模基础知识"
+    ],
+    "aliases_new": [
+      "VRChat Avatar 改模基础知识"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/avatar-optimizer.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/avatar-parameter-staged-sync.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Avatar 参数分步同步架构",
+      "avatar: Avatar 参数分步同步架构"
+    ],
+    "aliases_new": [
+      "Avatar 参数分步同步架构"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/lac-avatar-compressor.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/ma-component-cards.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/ma2bt.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/meshia-mesh-simplification.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Meshia Mesh Simplification",
+      "avatar: Meshia Mesh Simplification"
+    ],
+    "aliases_new": [
+      "Meshia Mesh Simplification"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/modular-avatar-tutorials-detailed.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/modular-avatar.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Modular Avatar (MA) 完整知识库",
+      "avatar: Modular Avatar (MA) 完整知识库"
+    ],
+    "aliases_new": [
+      "Modular Avatar (MA) 完整知识库"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/ndmf-tools.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "NDMF 工具生态体系",
+      "avatar: NDMF 工具生态体系"
+    ],
+    "aliases_new": [
+      "NDMF 工具生态体系"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/performance-benchmarks.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Unity/VRChat 性能基准测试",
+      "avatar: Unity/VRChat 性能基准测试"
+    ],
+    "aliases_new": [
+      "Unity/VRChat 性能基准测试"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/playable-layers.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/filamented/comparison.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Filamented 与同类项目对比",
+      "avatar: Filamented 与同类项目对比"
+    ],
+    "aliases_new": [
+      "Filamented 与同类项目对比"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/filamented/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/filamented/overview.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Filamented Overview - 项目概览",
+      "avatar: Filamented Overview - 项目概览"
+    ],
+    "aliases_new": [
+      "Filamented Overview - 项目概览"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/filamented/pbr-improvements.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Filamented PBR 改进详解",
+      "avatar: Filamented PBR 改进详解"
+    ],
+    "aliases_new": [
+      "Filamented PBR 改进详解"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/index.md",
+    "related_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/advanced-settings.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/audiolink.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/basic-settings.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/color-settings.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/dissolve.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/fur.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/index.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/installation.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/optimization.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/outline.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/overview.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/reflection-settings.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/render-modes.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/stencil.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/troubleshooting.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/variations.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/liltoon/vrchat-specific.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/orl/comparison.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/orl/configurable.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/orl/index.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/orl/overview.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/orl/shader-list.md",
+    "aliases_status": "NO_CHANGE",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/other-shaders.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/audiolink-integration.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/comparison-liltoon.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/index.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/installation.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/modular-system.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/pro-vs-toon.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/quest-optimization.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/shader-variants.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/poiyomi/shading-styles.md",
+    "shader_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/scss.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/shader/unlitwf/index.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/teaching-methodology.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Avatar 改模教学法 & 问题诊断框架",
+      "avatar: Avatar 改模教学法 & 问题诊断框架"
+    ],
+    "aliases_new": [
+      "Avatar 改模教学法 & 问题诊断框架"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/tex-trans-tool.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/thry-avatar-evaluator-metrics.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/vrc-constraints.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "avatar/vrcfury-reference.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRCFury 完整参考 — Non-Destructive Avatar 工具与优化系统",
+      "avatar: VRCFury 完整参考 — Non-Destructive Avatar 工具与优化系统"
+    ],
+    "aliases_new": [
+      "VRCFury 完整参考 — Non-Destructive Avatar 工具与优化系统"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/alcom.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/audio-link.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/osc-protocol.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/udon-world-plugins.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "推荐 Udon 世界插件(Recommended Udon World Plugins)",
+      "hybrid: 推荐 Udon 世界插件(Recommended Udon World Plugins)"
+    ],
+    "aliases_new": [
+      "推荐 Udon 世界插件(Recommended Udon World Plugins)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "hybrid/vcc.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "index.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "meta/auxiliary-scripts.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "misc/accessibility-guide.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat 无障碍操作设计指南",
+      "misc: VRChat 无障碍操作设计指南"
+    ],
+    "aliases_new": [
+      "VRChat 无障碍操作设计指南"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "misc/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "misc/postprocessing-principles.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "后处理原理 — 现实参照",
+      "misc: 后处理原理 — 现实参照"
+    ],
+    "aliases_new": [
+      "后处理原理 — 现实参照"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "misc/postprocessing-usage.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "后处理使用方式 — Unity 参数与最佳实践",
+      "misc: 后处理使用方式 — Unity 参数与最佳实践"
+    ],
+    "aliases_new": [
+      "后处理使用方式 — Unity 参数与最佳实践"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/advanced-sync-patterns.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/bit-packed-flags.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Bit-Packed Flags",
+      "Pattern: Bit-Packed Flags"
+    ],
+    "aliases_new": [
+      "Bit-Packed Flags"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/build-time-vs-runtime-separation.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/channel-routing.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/code-generation-type-erasure.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/editor-preview-component.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/event-driven-state-machine.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/exclusive-control-selector.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/fade-then-snap.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/hash-based-dispatch.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/hybrid-subscription-modes.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/iid-object-identity.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/index.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/inherited-subscriber.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/late-joiner-state-restore.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/master-follower-syncer.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/material-propertyblock-safe-update.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/owner-authoritative-interaction.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/slot-parameter-passing.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/soft-detent-interpolation.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "patterns/unorthodox-patterns.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Unorthodox UdonSharp Patterns (邪修技法)",
+      "Pattern: Unorthodox UdonSharp Patterns (邪修技法)"
+    ],
+    "aliases_new": [
+      "Unorthodox UdonSharp Patterns (邪修技法)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "platform/android-development.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "platform/easyquestswitch.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "platform/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "platform/mobile-ui-optimization.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "references/creator-docs-comparison.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat Creator Docs 对比记录",
+      "references: VRChat Creator Docs 对比记录"
+    ],
+    "aliases_new": [
+      "VRChat Creator Docs 对比记录"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "references/index.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "References — 参考资料",
+      "references: References — 参考资料"
+    ],
+    "aliases_new": [
+      "References — 参考资料"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "reviews/common-failures.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Common Failures",
+      "reviews: Common Failures"
+    ],
+    "aliases_new": [
+      "Common Failures"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "reviews/index.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Reviews — 审查方法论入口",
+      "reviews: Reviews — 审查方法论入口"
+    ],
+    "aliases_new": [
+      "Reviews — 审查方法论入口"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "reviews/review-checklist.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "reviews/severity-model.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Severity Model",
+      "reviews: Severity Model"
+    ],
+    "aliases_new": [
+      "Severity Model"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/multi-vm-rules.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/networking-rules.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/performance-rules.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/udon-vm-architecture.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Udon VM Architecture Reference",
+      "rules: Udon VM Architecture Reference"
+    ],
+    "aliases_new": [
+      "Udon VM Architecture Reference"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/udonsharp-deep-pitfalls.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/udonsharp-language-limits.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "rules/vrchat-api-exposure.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/clientsim.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/community-notes.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Community Notes",
+      "sources: Community Notes"
+    ],
+    "aliases_new": [
+      "Community Notes"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/example-central.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/official-docs.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Official Documentation Sources",
+      "sources: Official Documentation Sources"
+    ],
+    "aliases_new": [
+      "Official Documentation Sources"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/open-source-projects.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Open Source Projects — 知识库溯源层",
+      "sources: Open Source Projects — 知识库溯源层"
+    ],
+    "aliases_new": [
+      "Open Source Projects — 知识库溯源层"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/quickbrown-luraswitch2.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "QuickBrown LuraSwitch2 — 案例研究型参考工程",
+      "sources: QuickBrown LuraSwitch2 — 案例研究型参考工程"
+    ],
+    "aliases_new": [
+      "QuickBrown LuraSwitch2 — 案例研究型参考工程"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/sardinal.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Sardinal — 知识库溯源",
+      "sources: Sardinal — 知识库溯源"
+    ],
+    "aliases_new": [
+      "Sardinal — 知识库溯源"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/udonvoiceutils.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "TLP UdonVoiceUtils (UVU) — 案例研究型参考工程",
+      "sources: TLP UdonVoiceUtils (UVU) — 案例研究型参考工程"
+    ],
+    "aliases_new": [
+      "TLP UdonVoiceUtils (UVU) — 案例研究型参考工程"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/ulocalization.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "ULocalization — 知识库溯源",
+      "sources: ULocalization — 知识库溯源"
+    ],
+    "aliases_new": [
+      "ULocalization — 知识库溯源"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/vpm-package-template.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VPM Package Template",
+      "sources: VPM Package Template"
+    ],
+    "aliases_new": [
+      "VPM Package Template"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/vrc-avatar-performance-tools.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/vrcx.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRCX — VRChat 伴侣应用",
+      "sources: VRCX — VRChat 伴侣应用"
+    ],
+    "aliases_new": [
+      "VRCX — VRChat 伴侣应用"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "sources/vvmw.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VizVid (VVMW) — 案例研究型参考工程",
+      "sources: VizVid (VVMW) — 案例研究型参考工程"
+    ],
+    "aliases_new": [
+      "VizVid (VVMW) — 案例研究型参考工程"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/02_TypeScript_SDK.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat.js - JavaScript SDK",
+      "vrchatsdk: VRChat.js - JavaScript SDK"
+    ],
+    "aliases_new": [
+      "VRChat.js - JavaScript SDK"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/03_Websocket_API.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Websocket API",
+      "vrchatsdk: Websocket API"
+    ],
+    "aliases_new": [
+      "Websocket API"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/04_Instances.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Instances",
+      "vrchatsdk: Instances"
+    ],
+    "aliases_new": [
+      "Instances"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/05_Tags.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Tags",
+      "vrchatsdk: Tags"
+    ],
+    "aliases_new": [
+      "Tags"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/06_FAQ.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Frequently asked questions",
+      "vrchatsdk: Frequently asked questions"
+    ],
+    "aliases_new": [
+      "Frequently asked questions"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/07_API_认证.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 认证模块",
+      "vrchatsdk: VRChat API 参考 - 认证模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 认证模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/08_API_用户.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 用户模块",
+      "vrchatsdk: VRChat API 参考 - 用户模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 用户模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/09_API_世界.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 世界模块",
+      "vrchatsdk: VRChat API 参考 - 世界模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 世界模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/10_API_Avatar.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - Avatar 模块",
+      "vrchatsdk: VRChat API 参考 - Avatar 模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - Avatar 模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/11_API_好友.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 好友模块",
+      "vrchatsdk: VRChat API 参考 - 好友模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 好友模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/12_API_通知.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 通知模块",
+      "vrchatsdk: VRChat API 参考 - 通知模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 通知模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/13_API_收藏.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 收藏模块",
+      "vrchatsdk: VRChat API 参考 - 收藏模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 收藏模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/14_API_实例.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 实例模块",
+      "vrchatsdk: VRChat API 参考 - 实例模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 实例模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/15_API_文件.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 文件模块",
+      "vrchatsdk: VRChat API 参考 - 文件模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 文件模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/16_模型_User.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat 数据模型 - User",
+      "vrchatsdk: VRChat 数据模型 - User"
+    ],
+    "aliases_new": [
+      "VRChat 数据模型 - User"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/17_模型_CurrentUser.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat 数据模型 - CurrentUser",
+      "vrchatsdk: VRChat 数据模型 - CurrentUser"
+    ],
+    "aliases_new": [
+      "VRChat 数据模型 - CurrentUser"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/18_API_群组.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRChat API 参考 - 群组模块",
+      "vrchatsdk: VRChat API 参考 - 群组模块"
+    ],
+    "aliases_new": [
+      "VRChat API 参考 - 群组模块"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "vrchatsdk/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/bakery/index.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/bakery/light-baking-guide.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "光照烘焙深度指南",
+      "world: 光照烘焙深度指南"
+    ],
+    "aliases_new": [
+      "光照烘焙深度指南"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/playerdata-editor.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/playerobject-editor.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/systems/architecture.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/systems/editor.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/systems/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/systems/runtime.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/clientsim/systems/script-execution-order.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/creator-economy.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Creator Economy SDK",
+      "world: Creator Economy SDK"
+    ],
+    "aliases_new": [
+      "Creator Economy SDK"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/README.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/ai-navigation.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "AI Navigation Example",
+      "world: AI Navigation Example"
+    ],
+    "aliases_new": [
+      "AI Navigation Example"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/detect-controller-collide.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Detect Controller Collide",
+      "world: Detect Controller Collide"
+    ],
+    "aliases_new": [
+      "Detect Controller Collide"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/image-loading.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Image Loading Example",
+      "world: Image Loading Example"
+    ],
+    "aliases_new": [
+      "Image Loading Example"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/midi-playback.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "MIDI Playback",
+      "world: MIDI Playback"
+    ],
+    "aliases_new": [
+      "MIDI Playback"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/minimap.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Minimap",
+      "world: Minimap"
+    ],
+    "aliases_new": [
+      "Minimap"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/mute-others.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Mute Others",
+      "world: Mute Others"
+    ],
+    "aliases_new": [
+      "Mute Others"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/build-from-custom-parts.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/build-from-demo-parts.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/uoc-flythrough.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/uoc-how-stuff-works.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/obstacle-course/uoc-window.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Obstacle Course Toolkit(Toolkit 窗口 / Editor 扩展)",
+      "world: Obstacle Course Toolkit(Toolkit 窗口 / Editor 扩展)"
+    ],
+    "aliases_new": [
+      "Obstacle Course Toolkit(Toolkit 窗口 / Editor 扩展)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/health-bar.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Health Bar(血条)",
+      "world: Health Bar(血条)"
+    ],
+    "aliases_new": [
+      "Health Bar(血条)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/leaderboard.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Leaderboard(排行榜)",
+      "world: Leaderboard(排行榜)"
+    ],
+    "aliases_new": [
+      "Leaderboard(排行榜)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/persistent-idle-game.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Persistent Idle Game(放置类游戏)",
+      "world: Persistent Idle Game(放置类游戏)"
+    ],
+    "aliases_new": [
+      "Persistent Idle Game(放置类游戏)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/persistent-pen.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Persistent Pen(持久化画笔)",
+      "world: Persistent Pen(持久化画笔)"
+    ],
+    "aliases_new": [
+      "Persistent Pen(持久化画笔)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/playerdata-types.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Data Types(PlayerData 数据类型)",
+      "world: Player Data Types(PlayerData 数据类型)"
+    ],
+    "aliases_new": [
+      "Player Data Types(PlayerData 数据类型)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/position-sync.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/post-processing-settings.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Post-Processing Settings(后处理设置)",
+      "world: Post-Processing Settings(后处理设置)"
+    ],
+    "aliases_new": [
+      "Post-Processing Settings(后处理设置)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/simple-rpg.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Simple RPG(简单 RPG)",
+      "world: Simple RPG(简单 RPG)"
+    ],
+    "aliases_new": [
+      "Simple RPG(简单 RPG)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/persistence/unlock-items.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Unlock Items(永久解锁)",
+      "world: Unlock Items(永久解锁)"
+    ],
+    "aliases_new": [
+      "Unlock Items(永久解锁)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/player-join-zones.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Join Zones",
+      "world: Player Join Zones"
+    ],
+    "aliases_new": [
+      "Player Join Zones"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/screen-canvas.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Screen Canvas",
+      "world: Screen Canvas"
+    ],
+    "aliases_new": [
+      "Screen Canvas"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/avatar-scaling-settings.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Avatar Scaling Settings",
+      "world: Avatar Scaling Settings"
+    ],
+    "aliases_new": [
+      "Avatar Scaling Settings"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/player-mod-setter.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Mod Setter",
+      "world: Player Mod Setter"
+    ],
+    "aliases_new": [
+      "Player Mod Setter"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/simple-pen-system.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Simple Pen System",
+      "world: Simple Pen System"
+    ],
+    "aliases_new": [
+      "Simple Pen System"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/udon-video-sync-player.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon-example-scene/world-audio-settings.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/examples/udon.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Udon Basics",
+      "world: Udon Basics"
+    ],
+    "aliases_new": [
+      "Udon Basics"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/items.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Items in Udon Worlds",
+      "world: Items in Udon Worlds"
+    ],
+    "aliases_new": [
+      "Items in Udon Worlds"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/layers.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Unity Layers in VRChat",
+      "world: Unity Layers in VRChat"
+    ],
+    "aliases_new": [
+      "Unity Layers in VRChat"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/performance-guide.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/reflection-probes.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Unity 反射探针与 VRChat World",
+      "world: Unity 反射探针与 VRChat World"
+    ],
+    "aliases_new": [
+      "Unity 反射探针与 VRChat World"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/textmeshpro.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/textmeshpro/tmp_text.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-avatarpedestal.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRC Avatar Pedestal",
+      "world: VRC Avatar Pedestal"
+    ],
+    "aliases_new": [
+      "VRC Avatar Pedestal"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-cameradolly.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRC Camera Dolly",
+      "world: VRC Camera Dolly"
+    ],
+    "aliases_new": [
+      "VRC Camera Dolly"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-enablepersistence.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-mirrorreflection.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRC Mirror Reflection",
+      "world: VRC Mirror Reflection"
+    ],
+    "aliases_new": [
+      "VRC Mirror Reflection"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-objectsync.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-portalmarker.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "VRC Portal Marker",
+      "world: VRC Portal Marker"
+    ],
+    "aliases_new": [
+      "VRC Portal Marker"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-scenedescriptor.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/scene-components/vrc-station.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/sdk-prefabs.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "SDK Prefabs",
+      "world: SDK Prefabs"
+    ],
+    "aliases_new": [
+      "SDK Prefabs"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/shader/graphlit.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/shader/index.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/supported-assets.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Supported Scripted Assets",
+      "world: Supported Scripted Assets"
+    ],
+    "aliases_new": [
+      "Supported Scripted Assets"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/ai-navigation.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "AI Navigation",
+      "world: AI Navigation"
+    ],
+    "aliases_new": [
+      "AI Navigation"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/avatar-events.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/data-containers/byte-and-bit-operations.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/data-containers/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/debugging-udon-projects.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Debugging Udon Projects",
+      "world: Debugging Udon Projects"
+    ],
+    "aliases_new": [
+      "Debugging Udon Projects"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/event-execution-order.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/external-urls.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "External URLs - 外部 URL 与白名单",
+      "world: External URLs - 外部 URL 与白名单"
+    ],
+    "aliases_new": [
+      "External URLs - 外部 URL 与白名单"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/event-nodes.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/graph-elements.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/searching-for-nodes.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/special-nodes.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/graph/type-nodes.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/image-loading.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Image Loading - 远程图片加载",
+      "world: Image Loading - 远程图片加载"
+    ],
+    "aliases_new": [
+      "Image Loading - 远程图片加载"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/input-events.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "CHANGED",
+    "related_added": [],
+    "related_removed": [
+      "https://github.com/vrchat-community/osc/blob/main/docs/Input.md"
+    ]
+  },
+  {
+    "file": "world/udon/midi/index.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "MIDI in Udon",
+      "world: MIDI in Udon"
+    ],
+    "aliases_new": [
+      "MIDI in Udon"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/midi/midi-playback.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/midi/realtime-midi.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Realtime MIDI(实时 MIDI 输入)",
+      "world: Realtime MIDI(实时 MIDI 输入)"
+    ],
+    "aliases_new": [
+      "Realtime MIDI(实时 MIDI 输入)"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/compatibility.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/debugging.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/events.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/late-joiners.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/network-components.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/network-details.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/ownership.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/performance.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/tools/network-id-utility.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Network ID Utility | VRChat Creation",
+      "world: Network ID Utility | VRChat Creation"
+    ],
+    "aliases_new": [
+      "Network ID Utility | VRChat Creation"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/tools/network-stats.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Network Stats | VRChat Creation",
+      "world: Network Stats | VRChat Creation"
+    ],
+    "aliases_new": [
+      "Network Stats | VRChat Creation"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/networking/variables.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/drones/drone-information.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Drone Information — Drone 信息查询",
+      "world: Drone Information — Drone 信息查询"
+    ],
+    "aliases_new": [
+      "Drone Information — Drone 信息查询"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/drones/getting-drones.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Getting Drones — 获取 Drone 实例",
+      "world: Getting Drones — 获取 Drone 实例"
+    ],
+    "aliases_new": [
+      "Getting Drones — 获取 Drone 实例"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/drones/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/getting-players.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Getting Players — 获取玩家对象",
+      "world: Getting Players — 获取玩家对象"
+    ],
+    "aliases_new": [
+      "Getting Players — 获取玩家对象"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/player-audio.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/player-avatar-scaling.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Avatar Scaling — Avatar 缩放系统",
+      "world: Player Avatar Scaling — Avatar 缩放系统"
+    ],
+    "aliases_new": [
+      "Player Avatar Scaling — Avatar 缩放系统"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/player-collisions.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Collisions — 玩家碰撞检测",
+      "world: Player Collisions — 玩家碰撞检测"
+    ],
+    "aliases_new": [
+      "Player Collisions — 玩家碰撞检测"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/player-forces.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Forces — 玩家移动力 / 速度 / 重力",
+      "world: Player Forces — 玩家移动力 / 速度 / 重力"
+    ],
+    "aliases_new": [
+      "Player Forces — 玩家移动力 / 速度 / 重力"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/players/player-positions.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Player Positions — 玩家位置/旋转/追踪/速度/传送",
+      "world: Player Positions — 玩家位置/旋转/追踪/速度/传送"
+    ],
+    "aliases_new": [
+      "Player Positions — 玩家位置/旋转/追踪/速度/传送"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/string-loading.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "String Loading - 远程字符串加载",
+      "world: String Loading - 远程字符串加载"
+    ],
+    "aliases_new": [
+      "String Loading - 远程字符串加载"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udon-moderation-tool-guidelines.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Udon 版主工具开发准则",
+      "world: Udon 版主工具开发准则"
+    ],
+    "aliases_new": [
+      "Udon 版主工具开发准则"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/attributes.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "UdonSharp Attributes",
+      "world: UdonSharp Attributes"
+    ],
+    "aliases_new": [
+      "UdonSharp Attributes"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/compilation.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/configuration.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "UdonSharp Configuration",
+      "world: UdonSharp Configuration"
+    ],
+    "aliases_new": [
+      "UdonSharp Configuration"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/editorscripting.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "UdonSharp Editor Scripting",
+      "world: UdonSharp Editor Scripting"
+    ],
+    "aliases_new": [
+      "UdonSharp Editor Scripting"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/udonsharp/performance-tips.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/ui-events.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/using-build-test.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Using Build & Test - 本地测试流程",
+      "world: Using Build & Test - 本地测试流程"
+    ],
+    "aliases_new": [
+      "Using Build & Test - 本地测试流程"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/video-players/index.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/video-players/www-whitelist.md",
+    "aliases_status": "NO_CHANGE",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/vm-and-assembly.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "The Udon VM and Udon Assembly - 字节码与汇编参考",
+      "world: The Udon VM and Udon Assembly - 字节码与汇编参考"
+    ],
+    "aliases_new": [
+      "The Udon VM and Udon Assembly - 字节码与汇编参考"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/vrc-graphics/asyncgpureadback.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/vrc-graphics/index.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/vrc-graphics/vrchat-shader-globals.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/udon/world-debug-views.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "World Debug Views - VRChat Debug 视图",
+      "world: World Debug Views - VRChat Debug 视图"
+    ],
+    "aliases_new": [
+      "World Debug Views - VRChat Debug 视图"
+    ],
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/vrc-camera-settings.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/vrc-light-volumes.md",
+    "related_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/vrc-quality-settings.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/vvmw.md",
+    "aliases_status": "NO_CHANGE"
+  },
+  {
+    "file": "world/whitelisted-world-components.md",
+    "aliases_status": "OTHER",
+    "aliases_old": [
+      "Allowlisted World Components",
+      "world: Allowlisted World Components"
+    ],
+    "aliases_new": [
+      "Allowlisted World Components"
+    ],
+    "related_status": "NO_CHANGE"
+  }
+]
